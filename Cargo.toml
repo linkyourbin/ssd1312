@@ -5,7 +5,7 @@ edition = "2024"
 description = "a driver for ssd1312(iic interface), tested on STM32H723ZGT6, may there be some errors, please forgive me that i am publishing a crate for the first time, if you have confusion, please go to the link below to my github repository to comment your issues"
 license = "MIT"
 authors = ["linkyourbin"]
-repository = "https://github.com/linkyourbin/ssd1312-rs"
+repository = "https://github.com/linkyourbin/ssd1312"
 exclude = ["build.rs", "demo.png"]
 [[bin]]
 name = "ssd1312"
