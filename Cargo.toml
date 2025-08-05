@@ -6,10 +6,11 @@ description = "a driver for ssd1312(iic interface), tested on STM32H723ZGT6, may
 license = "MIT"
 authors = ["linkyourbin"]
 repository = "https://github.com/linkyourbin/ssd1312-rs"
-
+exclude = ["build.rs", "demo.png"]
 [[bin]]
 name = "ssd1312"
 path = "examples/ssd1312.rs"
+keywords = ["no-std", "ssd1312", "oled", "embassy"]
 
 [dependencies]
 embassy-stm32 = { version = "0.2.0",  features = [ "defmt", "stm32h723zg", "unstable-pac", "memory-x", "time-driver-any" ]  }
