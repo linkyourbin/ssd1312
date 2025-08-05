@@ -6,7 +6,7 @@
 - `embassy-executor = { version = "0.7.0",  features = ["arch-cortex-m", "executor-thread", "defmt"] }`
 
 # here is a demo pic in case you wanna see if it works
-![a demo case](demo.jpg)
+![a demo case](https://github.com/linkyourbin/ssd1312/blob/master/demo.jpg?raw=true)
 # 如何使用
 # how to use
 # you can use a LLM to help you translate the code below and the code in the `lib.rs`
