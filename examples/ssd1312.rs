@@ -83,55 +83,55 @@ async fn main(_spawner: Spawner) -> ! {
     
     loop {
         // 测试1: 清除屏幕并绘制对角线
-        // info!("Drawing diagonal line");
-        // oled.set_invert(false).unwrap();
-        // oled.clear().unwrap();
-        // for i in 0..64 {
-        //     if i * 2 < 128 {
-        //         oled.set_pixel(i * 2, i, true);
-        //     }
-        // }
-        // oled.display().unwrap();
-        // Timer::after_millis(2000).await;
+        info!("Drawing diagonal line");
+        oled.set_invert(false).unwrap();
+        oled.clear().unwrap();
+        for i in 0..64 {
+            if i * 2 < 128 {
+                oled.set_pixel(i * 2, i, true);
+            }
+        }
+        oled.display().unwrap();
+        Timer::after_millis(2000).await;
 
-        // // 测试2: 绘制矩形框
-        // info!("Drawing rectangle");
-        // oled.clear().unwrap();
-        // oled.draw_rect(10, 10, 50, 30).unwrap();
-        // Timer::after_millis(2000).await;
+        // 测试2: 绘制矩形框
+        info!("Drawing rectangle");
+        oled.clear().unwrap();
+        oled.draw_rect(10, 10, 50, 30).unwrap();
+        Timer::after_millis(2000).await;
 
-        // // 测试3: 填充矩形
-        // info!("Drawing filled rectangle");
-        // oled.clear().unwrap();
-        // oled.fill_rect(30, 20, 40, 20).unwrap();
-        // Timer::after_millis(2000).await;
+        // 测试3: 填充矩形
+        info!("Drawing filled rectangle");
+        oled.clear().unwrap();
+        oled.fill_rect(30, 20, 40, 20).unwrap();
+        Timer::after_millis(2000).await;
 
-        // // 测试4: 绘制网格
-        // info!("Drawing grid");
-        // oled.clear().unwrap();
-        // // 垂直线
-        // for x in (0..128).step_by(16) {
-        //     oled.draw_vertical_line(x, 0, 64).unwrap();
-        // }
-        // // 水平线
-        // for y in (0..64).step_by(8) {
-        //     oled.draw_horizontal_line(0, y, 128).unwrap();
-        // }
-        // Timer::after_millis(2000).await;
+        // 测试4: 绘制网格
+        info!("Drawing grid");
+        oled.clear().unwrap();
+        // 垂直线
+        for x in (0..128).step_by(16) {
+            oled.draw_vertical_line(x, 0, 64).unwrap();
+        }
+        // 水平线
+        for y in (0..64).step_by(8) {
+            oled.draw_horizontal_line(0, y, 128).unwrap();
+        }
+        Timer::after_millis(2000).await;
 
-        // oled.set_invert(true).unwrap();
+        oled.set_invert(true).unwrap();
 
-        // info!("Drawing grid");
-        // oled.clear().unwrap();
-        // // 垂直线
-        // for x in (0..128).step_by(16) {
-        //     oled.draw_vertical_line(x, 0, 64).unwrap();
-        // }
-        // // 水平线
-        // for y in (0..64).step_by(8) {
-        //     oled.draw_horizontal_line(0, y, 128).unwrap();
-        // }
-        // Timer::after_millis(2000).await;
+        info!("Drawing grid");
+        oled.clear().unwrap();
+        // 垂直线
+        for x in (0..128).step_by(16) {
+            oled.draw_vertical_line(x, 0, 64).unwrap();
+        }
+        // 水平线
+        for y in (0..64).step_by(8) {
+            oled.draw_horizontal_line(0, y, 128).unwrap();
+        }
+        Timer::after_millis(2000).await;
         
 
 
